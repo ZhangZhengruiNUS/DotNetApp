@@ -30,8 +30,6 @@ RUN dotnet restore
 
 RUN dotnet build
 
-RUN docker login
-
 EXPOSE 5000:5000
 
 CMD [ "dotnet", "run" ]
